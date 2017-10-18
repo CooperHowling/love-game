@@ -11,8 +11,8 @@ public class changeRhyme : MonoBehaviour {
     public void cRhyme(string rhyme)
     {
         rhymeText.text = rhyme;
-        
 
     }
+
 
 }

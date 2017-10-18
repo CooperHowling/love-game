@@ -1,15 +1,23 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
 
-public class passLevel : MonoBehaviour {
+public class passLevel : MonoBehaviour
+{
 
+    public bool ButtonOn = false;
+    public Button MyButton;
 
-    public void changeScene(string sceneName)
+    public void BeenClicked()
     {
-        SceneManager.LoadScene(sceneName);
-
+        ButtonOn = !ButtonOn;
+        if (ButtonOn)
+        {
+            MyButton.image.color = Color.green;
+        }
+        else
+        {
+            MyButton.image.color = Color.white;
+        }
     }
-
 }
