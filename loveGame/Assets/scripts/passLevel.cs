@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.Analytics;
+using UnityEngine.SceneManagement;
 
 public class passLevel : MonoBehaviour
 {
@@ -19,6 +21,10 @@ public class passLevel : MonoBehaviour
         {
             MyButton.image.color = Color.white;
         }
+        //analytics, when user passes level custom event is triggered
+        Scene sceneName = SceneManager.GetActiveScene();
+        Analytics.CustomEvent("passLevel"+ sceneName);
+
     }
 
 }
