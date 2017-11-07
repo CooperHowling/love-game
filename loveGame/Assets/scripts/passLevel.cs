@@ -16,6 +16,7 @@ public class passLevel : MonoBehaviour
         if (ButtonOn)
         {
             MyButton.image.color = Color.green;
+            
         }
         else
         {
