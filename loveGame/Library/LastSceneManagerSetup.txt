@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/intro_convo_4.unity
+- path: Assets/scenes/tutorial.unity
   isLoaded: 1
   isActive: 1
