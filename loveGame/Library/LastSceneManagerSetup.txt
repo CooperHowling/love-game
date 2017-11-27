@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/intro_convo_1.unity
+- path: Assets/scenes/level_select.unity
   isLoaded: 1
   isActive: 1

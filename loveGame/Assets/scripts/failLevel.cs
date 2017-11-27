@@ -14,6 +14,7 @@ public class failLevel : MonoBehaviour
         if (ButtonOn)
         {
             MyButton.image.color = Color.red;
+            MyButton.interactable = false;
         }
         else
         {
