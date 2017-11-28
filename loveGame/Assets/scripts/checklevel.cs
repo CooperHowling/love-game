@@ -19,10 +19,12 @@ public class checklevel : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+
         
-        button3.interactable = false;
-        button4.interactable = false;
-        button5.interactable = false;
+        
+        
+        
+        
 
         checkWin = passLevel.LevelWin;
         print(checkWin);
@@ -35,33 +37,40 @@ public class checklevel : MonoBehaviour {
         }else
         {
           button2.interactable = false;
+            Stage2.SetActive(true);
         }
 
         if (checkWin >= 2)
         {
             Stage3.SetActive(false);
+            button3.interactable = true;
         }
         else
         {
             button3.interactable = false;
+            Stage3.SetActive(true);
         }
 
         if (checkWin >= 3)
         {
             Stage4.SetActive(false);
+            button4.interactable = true;
         }
         else
         {
             button4.interactable = false;
+            Stage4.SetActive(true);
         }
 
         if (checkWin >= 4)
         {
             Stage5.SetActive(false);
+            button5.interactable = true;
         }
         else
         {
             button5.interactable = false;
+            Stage5.SetActive(true);
         }
 
     }
