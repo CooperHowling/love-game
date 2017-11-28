@@ -222,6 +222,7 @@
     <Compile Include="Assets\scripts\analytics.cs" />
     <Compile Include="Assets\scripts\changeRhyme.cs" />
     <Compile Include="Assets\scripts\checklevel.cs" />
+    <Compile Include="Assets\scripts\checkStage.cs" />
     <Compile Include="Assets\scripts\conversation1.cs" />
     <Compile Include="Assets\scripts\failLevel.cs" />
     <Compile Include="Assets\scripts\GameManager.cs" />

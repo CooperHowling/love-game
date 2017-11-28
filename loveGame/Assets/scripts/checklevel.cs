@@ -5,73 +5,219 @@ using UnityEngine.UI;
 
 public class checklevel : MonoBehaviour {
 
-    public int checkWin;
-    public GameObject Stage2;
-    public GameObject Stage3;
-    public GameObject Stage4;
-    public GameObject Stage5;
+    public int check1Win;
+    public int check2Win;
+    public int check3Win;
+    public int check4Win;
+    public int check5Win;
+    public int verifyStage;
+    public GameObject level2;
+    public GameObject level3;
+    public GameObject level4;
     public Button button2;
     public Button button3;
     public Button button4;
-    public Button button5;
-
-
 
     // Use this for initialization
     void Start () {
-
         
-        
-        
-        
-        
+        check1Win = passLevel.Level1Win;
+        check2Win = passLevel.Level2Win;
+        check3Win = passLevel.Level3Win;
+        check4Win = passLevel.Level4Win;
+        check5Win = passLevel.Level5Win;
+        verifyStage = passLevel.BossWin;
 
-        checkWin = passLevel.LevelWin;
-        print(checkWin);
+        // Check levels in stage 1 to see if beat 
+        if (verifyStage >= 0)
+        {
+            if (check1Win >= 1)
+            {
+                level2.SetActive(false);
+                button2.interactable = true;
+
+            }
+            else
+            {
+                button2.interactable = false;
+                level2.SetActive(true);
+            }
+
+            if (check1Win >= 2)
+            {
+                level3.SetActive(false);
+                button3.interactable = true;
+            }
+            else
+            {
+                button3.interactable = false;
+                level3.SetActive(true);
+            }
+
+            if (check1Win >= 3)
+            {
+                level4.SetActive(false);
+                button4.interactable = true;
+            }
+            else
+            {
+                button4.interactable = false;
+                level4.SetActive(true);
+            }
+        }
         
-        if(checkWin >= 1)
+        // Check levels in stage 2 to see if beat
+        if (verifyStage >= 1)
         {
-            Stage2.SetActive(false);
-            button2.interactable = true;
+            if (check2Win >= 1)
+            {
+                level2.SetActive(false);
+                button2.interactable = true;
 
-        }else
-        {
-          button2.interactable = false;
-            Stage2.SetActive(true);
+            }
+            else
+            {
+                button2.interactable = false;
+                level2.SetActive(true);
+            }
+
+            if (check2Win >= 2)
+            {
+                level3.SetActive(false);
+                button3.interactable = true;
+            }
+            else
+            {
+                button3.interactable = false;
+                level3.SetActive(true);
+            }
+
+            if (check2Win >= 3)
+            {
+                level4.SetActive(false);
+                button4.interactable = true;
+            }
+            else
+            {
+                button4.interactable = false;
+                level4.SetActive(true);
+            }
         }
 
-        if (checkWin >= 2)
+        // Check levels in stage 3 to see if beat
+        if (verifyStage >= 2)
         {
-            Stage3.SetActive(false);
-            button3.interactable = true;
-        }
-        else
-        {
-            button3.interactable = false;
-            Stage3.SetActive(true);
+            if (check3Win >= 1)
+            {
+                level2.SetActive(false);
+                button2.interactable = true;
+
+            }
+            else
+            {
+                button2.interactable = false;
+                level2.SetActive(true);
+            }
+
+            if (check3Win >= 2)
+            {
+                level3.SetActive(false);
+                button3.interactable = true;
+            }
+            else
+            {
+                button3.interactable = false;
+                level3.SetActive(true);
+            }
+
+            if (check3Win >= 3)
+            {
+                level4.SetActive(false);
+                button4.interactable = true;
+            }
+            else
+            {
+                button4.interactable = false;
+                level4.SetActive(true);
+            }
         }
 
-        if (checkWin >= 3)
+        // Check levels in stage 4 to see if beat
+        if (verifyStage >= 3)
         {
-            Stage4.SetActive(false);
-            button4.interactable = true;
-        }
-        else
-        {
-            button4.interactable = false;
-            Stage4.SetActive(true);
+            if (check4Win >= 1)
+            {
+                level2.SetActive(false);
+                button2.interactable = true;
+
+            }
+            else
+            {
+                button2.interactable = false;
+                level2.SetActive(true);
+            }
+
+            if (check4Win >= 2)
+            {
+                level3.SetActive(false);
+                button3.interactable = true;
+            }
+            else
+            {
+                button3.interactable = false;
+                level3.SetActive(true);
+            }
+
+            if (check4Win >= 3)
+            {
+                level4.SetActive(false);
+                button4.interactable = true;
+            }
+            else
+            {
+                button4.interactable = false;
+                level4.SetActive(true);
+            }
         }
 
-        if (checkWin >= 4)
+        // Check levels in stage 5 to see if beat
+        if (verifyStage >= 4)
         {
-            Stage5.SetActive(false);
-            button5.interactable = true;
+            if (check5Win >= 1)
+            {
+                level2.SetActive(false);
+                button2.interactable = true;
+
+            }
+            else
+            {
+                button2.interactable = false;
+                level2.SetActive(true);
+            }
+
+            if (check5Win >= 2)
+            {
+                level3.SetActive(false);
+                button3.interactable = true;
+            }
+            else
+            {
+                button3.interactable = false;
+                level3.SetActive(true);
+            }
+
+            if (check5Win >= 3)
+            {
+                level4.SetActive(false);
+                button4.interactable = true;
+            }
+            else
+            {
+                button4.interactable = false;
+                level4.SetActive(true);
+            }
         }
-        else
-        {
-            button5.interactable = false;
-            Stage5.SetActive(true);
-        }
+
 
     }
 
