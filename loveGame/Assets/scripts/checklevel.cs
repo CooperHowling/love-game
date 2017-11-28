@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class checklevel : MonoBehaviour {
 
-    public int check1Win;
-    public int check2Win;
-    public int check3Win;
-    public int check4Win;
-    public int check5Win;
-    public int verifyStage;
+    public int check1Win = passLevel.Level1Win;
+    public int check2Win = passLevel.Level2Win;
+    public int check3Win = passLevel.Level3Win;
+    public int check4Win = passLevel.Level4Win;
+    public int check5Win = passLevel.Level5Win;
+    public int verifyStage = passLevel.BossWin;
     public GameObject level2;
     public GameObject level3;
     public GameObject level4;
@@ -18,19 +18,13 @@ public class checklevel : MonoBehaviour {
     public Button button3;
     public Button button4;
 
+        
+   
     // Use this for initialization
     void Start () {
-        
-        check1Win = passLevel.Level1Win;
-        check2Win = passLevel.Level2Win;
-        check3Win = passLevel.Level3Win;
-        check4Win = passLevel.Level4Win;
-        check5Win = passLevel.Level5Win;
-        verifyStage = passLevel.BossWin;
 
         // Check levels in stage 1 to see if beat 
-        if (verifyStage >= 0)
-        {
+
             if (check1Win >= 1)
             {
                 level2.SetActive(false);
@@ -64,9 +58,10 @@ public class checklevel : MonoBehaviour {
                 button4.interactable = false;
                 level4.SetActive(true);
             }
-        }
-        
+
+
         // Check levels in stage 2 to see if beat
+
         if (verifyStage >= 1)
         {
             if (check2Win >= 1)
@@ -102,10 +97,11 @@ public class checklevel : MonoBehaviour {
                 button4.interactable = false;
                 level4.SetActive(true);
             }
-        }
 
+        }
         // Check levels in stage 3 to see if beat
-        if (verifyStage >= 2)
+
+        if (verifyStage >= 1)
         {
             if (check3Win >= 1)
             {
@@ -143,7 +139,7 @@ public class checklevel : MonoBehaviour {
         }
 
         // Check levels in stage 4 to see if beat
-        if (verifyStage >= 3)
+        if (verifyStage >= 1)
         {
             if (check4Win >= 1)
             {
@@ -178,11 +174,13 @@ public class checklevel : MonoBehaviour {
                 button4.interactable = false;
                 level4.SetActive(true);
             }
-        }
 
+        }
         // Check levels in stage 5 to see if beat
-        if (verifyStage >= 4)
+
+        if (verifyStage >= 1)
         {
+
             if (check5Win >= 1)
             {
                 level2.SetActive(false);
@@ -216,13 +214,11 @@ public class checklevel : MonoBehaviour {
                 button4.interactable = false;
                 level4.SetActive(true);
             }
-        }
 
+        }
 
     }
 
-    // Update is called once per frame
-    void Update () {
-		
-	}
+  
+    
 }

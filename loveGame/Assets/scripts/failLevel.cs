@@ -10,6 +10,8 @@ public class failLevel : MonoBehaviour
 
     public void BeenClicked()
     {
+
+           
         ButtonOn = !ButtonOn;
         if (ButtonOn)
         {
