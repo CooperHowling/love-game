@@ -28,9 +28,10 @@ public void BeenClicked()
         {
             MyButton.image.color = Color.green;
             Level1Win = Level1Win + 1;
+            StartCoroutine(WaitWin());
    
             print("this is the number -> " + Level1Win + " beat level 1");
-            WinPanel.SetActive(true);
+            WaitWin();
         }
         else
         {
@@ -203,6 +204,12 @@ public void BeenClicked()
         Button1.SetActive(false);
         Button2.SetActive(true);
 
+    }
+
+    IEnumerator WaitWin()
+    {
+        yield return new WaitForSeconds(2);
+        WinPanel.SetActive(true);
     }
 }
 

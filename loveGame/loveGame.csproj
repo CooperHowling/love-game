@@ -234,6 +234,7 @@
     <Compile Include="Assets\scripts\checkLevel5.cs" />
     <Compile Include="Assets\scripts\checkStage.cs" />
     <Compile Include="Assets\scripts\conversation1.cs" />
+    <Compile Include="Assets\scripts\dontDestroy.cs" />
     <Compile Include="Assets\scripts\failLevel.cs" />
     <Compile Include="Assets\scripts\GameManager.cs" />
     <Compile Include="Assets\scripts\LocationBasedHat.cs" />
