@@ -235,6 +235,7 @@
     <Compile Include="Assets\scripts\dontDestroy.cs" />
     <Compile Include="Assets\scripts\failLevel.cs" />
     <Compile Include="Assets\scripts\GameManager.cs" />
+    <Compile Include="Assets\scripts\hints.cs" />
     <Compile Include="Assets\scripts\LocationBasedHat.cs" />
     <Compile Include="Assets\scripts\MenuScript.cs" />
     <Compile Include="Assets\scripts\passLevel.cs" />
