@@ -7,7 +7,6 @@ public class failLevel : MonoBehaviour
 
     public bool ButtonOn = false;
     public Button MyButton;
-    public GameObject hintPanel;
 
 
     public void BeenClicked()
