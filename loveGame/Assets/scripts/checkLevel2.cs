@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class checkLevel2 : MonoBehaviour
 {
 
-    public int check2Win;
-    public int verifyStageB;
+    public static int check2Win;
+    public static int verifyStageB;
     public GameObject level2B;
     public GameObject level3B;
     public GameObject Level4B;
