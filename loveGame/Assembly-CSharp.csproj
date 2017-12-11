@@ -67,6 +67,7 @@
      <Compile Include="Assets\scripts\MenuScript.cs" />
      <Compile Include="Assets\scripts\passLevel.cs" />
      <Compile Include="Assets\scripts\saveData.cs" />
+     <Compile Include="Assets\scripts\Tutorial.cs" />
      <Compile Include="Assets\Services\Analytics\StandardEvents\AnalyticsEvent.cs" />
      <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\AcquisitionSource.cs" />
      <Compile Include="Assets\Services\Analytics\StandardEvents\Enums\AcquisitionType.cs" />
