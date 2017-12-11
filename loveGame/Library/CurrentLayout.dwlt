@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -40,8 +40,8 @@ MonoBehaviour:
     y: 0
     width: 482
     height: 637
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_MinSize: {x: 887, y: 492}
   m_MaxSize: {x: 16012, y: 14042}
   vertical: 1
-  controlID: 89
+  controlID: 9
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 887, y: 221}
   m_MaxSize: {x: 16012, y: 4021}
   vertical: 0
-  controlID: 90
+  controlID: 10
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -390,19 +390,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/scenes
+    - Assets/images
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/scenes
+  - Assets/images
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\Users\Matt\Documents\School\442 Game\love game 6\love-game\loveGame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 11}
-    m_SelectedIDs: e22b0000
-    m_LastClickedID: 11234
-    m_ExpandedIDs: 00000000702a0000b82a0000fa2a0000ac2b0000b02b0000a62e000000ca9a3bffffff7f
+    m_SelectedIDs: 30280000
+    m_LastClickedID: 10288
+    m_ExpandedIDs: 00000000a6270000f027000030280000ee280000f2280000982b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -430,7 +430,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000702a0000b82a0000fa2a0000ac2b0000b02b0000a62e0000
+    m_ExpandedIDs: 00000000a6270000f027000030280000ee280000f2280000982b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -482,7 +482,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 379}
+    m_ScrollPosition: {x: 0, y: 123}
     m_GridSize: 16
   m_DirectoriesAreaWidth: 198
 --- !u!114 &16
@@ -545,10 +545,10 @@ MonoBehaviour:
     width: 221
     height: 616
   m_TreeViewState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 7e2a0000
-    m_LastClickedID: 0
-    m_ExpandedIDs: 1475f2ff64ebf2ff549ff4ff7a17feffe81cfeffca5cfeff7e62feff4620ffff3626ffff9444ffffb845ffffde46ffff0648ffff2a49ffff987effff5282ffff7683ffffa48affff8c94ffffbe98ffff8aabffff12b3ffffe4b7ffffdcbcffff0ec2fffff2c5ffff52d7ffffa0f8ffff00000000c42e0000ca310000be3400006037000062390000523c0000403e00000842000066440000884b0000a04b0000de4b0000be4c0000d04c0000c4500000d85000006e510000be520000d0520000da520000e4520000845300008e5300009853000096550000d256000096590000d25a0000dc5a0000ee5a0000
+    scrollPos: {x: 0, y: 180}
+    m_SelectedIDs: 802f0000
+    m_LastClickedID: 12160
+    m_ExpandedIDs: 76e3ffff5eecffffa6fbffff00000000662f0000a42f0000ba2f0000e22f0000123000006030000026310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
