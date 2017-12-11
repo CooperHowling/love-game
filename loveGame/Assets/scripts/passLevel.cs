@@ -50,6 +50,7 @@ public void BeenClicked()
         {
             MyButton.image.color = Color.green;
             Level2Win = Level2Win + 1;
+            StartCoroutine(WaitWin());
 
             print("this is the number -> " + Level2Win + " beat level 1");
             WinPanel.SetActive(true);
@@ -71,6 +72,7 @@ public void BeenClicked()
         {
             MyButton.image.color = Color.green;
             Level3Win = Level3Win + 1;
+            StartCoroutine(WaitWin());
 
             print("this is the number -> " + Level3Win + " beat level 1");
             WinPanel.SetActive(true);
@@ -85,48 +87,7 @@ public void BeenClicked()
 
     }
 
-    public void BeenClicked4()
-    {
-        ButtonOn = !ButtonOn;
-        if (ButtonOn)
-        {
-            MyButton.image.color = Color.green;
-            Level4Win = Level4Win + 1;
-
-            print("this is the number -> " + Level4Win + " beat level 1");
-            WinPanel.SetActive(true);
-        }
-        else
-        {
-            MyButton.image.color = Color.white;
-        }
-        //analytics, when user passes level custom event is triggered
-        Scene sceneName = SceneManager.GetActiveScene();
-        Analytics.CustomEvent("passLevel" + sceneName);
-
-    }
-
-    public void BeenClicked5()
-    {
-        ButtonOn = !ButtonOn;
-        if (ButtonOn)
-        {
-            MyButton.image.color = Color.green;
-            Level5Win = Level5Win + 1;
-
-            print("this is the number -> " + Level5Win + " beat level 1");
-            WinPanel.SetActive(true);
-        }
-        else
-        {
-            MyButton.image.color = Color.white;
-        }
-        //analytics, when user passes level custom event is triggered
-        Scene sceneName = SceneManager.GetActiveScene();
-        Analytics.CustomEvent("passLevel" + sceneName);
-
-    }
-
+   
     public void StageWin()
     {
         ButtonOn = !ButtonOn;
@@ -145,7 +106,6 @@ public void BeenClicked()
         Analytics.CustomEvent("passLevel" + sceneName);
 
     }
-
 
 
     public void BossClicked()
