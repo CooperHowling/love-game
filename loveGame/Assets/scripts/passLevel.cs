@@ -50,10 +50,11 @@ public void BeenClicked()
         {
             MyButton.image.color = Color.green;
             Level2Win = Level2Win + 1;
-            StartCoroutine(WaitWin());
+            StartCoroutine(WaitWin2());
 
             print("this is the number -> " + Level2Win + " beat level 1");
-            WinPanel.SetActive(true);
+            
+            WaitWin2();
         }
         else
         {
@@ -72,10 +73,11 @@ public void BeenClicked()
         {
             MyButton.image.color = Color.green;
             Level3Win = Level3Win + 1;
-            StartCoroutine(WaitWin());
+            StartCoroutine(WaitWin3());
 
             print("this is the number -> " + Level3Win + " beat level 1");
-            WinPanel.SetActive(true);
+            
+            WaitWin3();
         }
         else
         {
@@ -167,6 +169,18 @@ public void BeenClicked()
     }
 
     IEnumerator WaitWin()
+    {
+        yield return new WaitForSeconds(2);
+        WinPanel.SetActive(true);
+    }
+
+    IEnumerator WaitWin2()
+    {
+        yield return new WaitForSeconds(2);
+        WinPanel.SetActive(true);
+    }
+
+    IEnumerator WaitWin3()
     {
         yield return new WaitForSeconds(2);
         WinPanel.SetActive(true);
